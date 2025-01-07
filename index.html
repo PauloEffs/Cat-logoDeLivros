@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Livros</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10V40C10 41.1046 10.8954 42 12 42H40C41.1046 42 42 41.1046 42 40V10C42 8.89543 41.1046 8 40 8H12C10.8954 8 10 8.89543 10 10Z" stroke="white" stroke-width="2"/>
+                    <path d="M15 8V42" stroke="white" stroke-width="2"/>
+                    <path d="M20 15H35" stroke="white" stroke-width="2"/>
+                    <path d="M20 20H35" stroke="white" stroke-width="2"/>
+                    <path d="M20 25H30" stroke="white" stroke-width="2"/>
+                </svg>
+            </div>
+            <h1>Catálogo de Livros</h1>
+            <button id="themeToggle" class="theme-toggle">
+                🌙 
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="#">Promoções</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+
+    
+    <main role="main">
+        <div class="controls">
+            <button id="addBookBtn">Adicionar Novo Livro</button>
+            <input type="text" id="searchInput" placeholder="Pesquisar livros...">
+            <select id="genreSelect">
+                <option value="all">Todos os gêneros</option>
+                <option value="fiction">Ficção</option>
+                <option value="fantasy">Fantasia</option>
+                <option value="romance">Romance</option>
+                <option value="mystery">Mistério</option>
+                <option value="thriller">Suspense</option>
+                <option value="horror">Terror</option>
+                <option value="biography">Biografia</option>
+                <option value="history">História</option>
+                <option value="science">Ciência</option>
+                <option value="poetry">Poesia</option>
+                <option value="drama">Drama</option>
+                <option value="adventure">Aventura</option>
+                <option value="classics">Clássicos</option>
+                <option value="comics">Quadrinhos</option>
+                <option value="children">Infantil</option>
+            </select>
+            <button id="searchBtn">Buscar</button>
+        </div>
+        
+        <div id="booksList" class="books-grid"></div>
+
+
+
+        <div id="bookModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Adicionar Novo Livro</h2>
+                <form id="bookForm">
+                    <input type="text" id="bookTitle" placeholder="Título" required>
+                    <input type="text" id="bookAuthor" placeholder="Autor" required>
+                    <input type="text" id="bookImage" placeholder="URL da Imagem">
+                    <select id="bookGenre" required>
+                        <option value="fiction">Ficção</option>
+                        <option value="fantasy">Fantasia</option>
+                        <option value="romance">Romance</option>
+                        <option value="mystery">Mistério</option>
+                        <option value="thriller">Suspense</option>
+                        <option value="horror">Terror</option>
+                        <option value="biography">Biografia</option>
+                        <option value="history">História</option>
+                        <option value="science">Ciência</option>
+                        <option value="poetry">Poesia</option>
+                        <option value="drama">Drama</option>
+                        <option value="adventure">Aventura</option>
+                        <option value="classics">Clássicos</option>
+                        <option value="comics">Quadrinhos</option>
+                        <option value="children">Infantil</option>     
+                    </select>
+                    <textarea id="bookDescription" placeholder="Descrição"></textarea>
+                    <button type="submit">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 Catálogo de Livros. Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias - Catálogo de Livros</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+    <div class="header-content">
+        <div class="logo-container">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 10V40C10 41.1046 10.8954 42 12 42H40C41.1046 42 42 41.1046 42 40V10C42 8.89543 41.1046 8 40 8H12C10.8954 8 10 8.89543 10 10Z" stroke="white" stroke-width="2"/>
+                <path d="M15 8V42" stroke="white" stroke-width="2"/>
+                <path d="M20 15H35" stroke="white" stroke-width="2"/>
+                <path d="M20 20H35" stroke="white" stroke-width="2"/>
+                <path d="M20 25H30" stroke="white" stroke-width="2"/>
+            </svg>
+        </div>
+        <h1>Catálogo de Livros</h1>
+        <button id="themeToggle" class="theme-toggle">
+            🌙
+        </button>
+    </div>
+</header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <main>
+        <div class="categories-container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-genre="all">Todos</button>
+                <button class="filter-btn" data-genre="fiction">Ficção</button>
+                <button class="filter-btn" data-genre="fantasy">Fantasia</button>
+                <button class="filter-btn" data-genre="romance">Romance</button>
+                <button class="filter-btn" data-genre="mystery">Mistério</button>
+                <button class="filter-btn" data-genre="thriller">Suspense</button>
+                <button class="filter-btn" data-genre="horror">Terror</button>
+                <button class="filter-btn" data-genre="biography">Biografia</button>
+                <button class="filter-btn" data-genre="history">História</button>
+                <button class="filter-btn" data-genre="science">Ciência</button>
+                <button class="filter-btn" data-genre="poetry">Poesia</button>
+                <button class="filter-btn" data-genre="drama">Drama</button>
+                <button class="filter-btn" data-genre="adventure">Aventura</button>
+                <button class="filter-btn" data-genre="classics">Clássicos</button>
+                <button class="filter-btn" data-genre="comics">Quadrinhos</button>
+                <button class="filter-btn" data-genre="children">Infantil</button>
+            </div>
+            <div id="booksList" class="books-grid"></div>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 Catálogo de Livros. Todos os direitos reservados.
+    </footer>
+
+    <script src="./categorias.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
