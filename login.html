@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+
+
+        <!-- Formulário de Login -->
+        <div id="loginForm">
+            <div class="header">
+                <h2>Login</h2>
+            </div>
+            <form id="authForm">
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        
+        <!-- Painel do Usuário -->
+        <div id="userPanel">
+            <div class="header">
+                <h2>Bem-vindo, <span id="userDisplay"></span>!</h2>
+                <button onclick="logout()" class="logout-btn">Sair</button>
+            </div>
+            <div class="form-group">
+                <label for="noteInput">Nova Nota:</label>
+                <input type="text" id="noteInput" placeholder="Digite sua nota...">
+            </div>
+            <button onclick="saveNote()">Salvar Nota</button>
+            <div id="userNotes"></div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
